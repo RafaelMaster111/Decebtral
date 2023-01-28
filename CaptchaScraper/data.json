@@ -1,0 +1,6 @@
+{
+    "init_url": "http://localhost:8000/",
+    "captcha_img": "/html/body/div/div/img",
+    "input_code": "//*[@id=\"myForm\"]/input[2]",
+    "btn_submit": "//*[@id=\"myForm\"]/input[3]"
+}

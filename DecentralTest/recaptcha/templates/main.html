@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- Example row of columns -->
+    <div class="recaptcha">
+        <img src="data:image/JPEG;base64, {{image}}">
+        <div>
+            <button class="btn btn_refresh"><a href="{{generate_captcha}}">Refresh</a></button>
+        </div>
+    </div>
+    <form method="POST" id="myForm" action="{% url 'checkcode' %}">
+        {% csrf_token %}
+        <input type="text" class="input_code" name="captcha-code">
+        <input type="submit" class="btn btn_submit">
+    </form>
+{% endblock %}

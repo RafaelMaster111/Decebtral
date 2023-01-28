@@ -1,0 +1,17 @@
+.recaptcha{
+    display: flex;
+    align-items: center;
+}
+.btn_refresh{
+    margin: 21%;
+    height: 30px;
+    width: 100px;
+}
+.btn_submit{
+    margin: 2%;
+    height: 30px;
+    width: 100px;
+}
+.input_code{
+    height: 25px;
+}
